@@ -16,7 +16,7 @@ public class Q1WeirdFunction {
         int f1 = 1;
         int f2 = 2;
 
-        for(int i = n; i >= 3; i++){
+        for(int i = 3; i <= 3; i++){
             fn = f1 + 2 * f2 + 3 * f0;
             
             f0 = f1;
