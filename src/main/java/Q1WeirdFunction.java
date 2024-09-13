@@ -12,15 +12,17 @@ public class Q1WeirdFunction {
 
     public static int fIterative(int n) {
         // TODO: Implement the iterative function
-        if(n < 3){
-            return n;
+        int fn = 0;
+        int f1 = 1;
+        int f2 = 2;
+
+        for(int i = n; i >= 3; i++){
+            fn = f1 + 2 * f2 + 3 * f0;
+            
+            f0 = f1;
+            f1 = f2;
+            f2 = fn;
         }
-        int f = 1;
-        int sum = 0;
-        if(n >= 3){
-            sum += f*(n-f);
-            f++;
-        }
-        return sum;
+        return fn;
     }
 }
